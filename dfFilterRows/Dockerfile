@@ -1,4 +1,4 @@
-FROM python
+FROM python3
 MAINTAINER 'deepanshu'
 RUN apt install python3 -y
 RUN mkdir /dockertest
