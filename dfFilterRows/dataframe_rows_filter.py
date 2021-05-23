@@ -10,7 +10,6 @@ raw_data = {'student':['A','B','C','D','E'],
 
 df = pd.DataFrame(raw_data)
 print(df)
-print("______________________________________________________________________________")
 
 def text_df(df):
 
