@@ -10,6 +10,7 @@ raw_data = {'student':['A','B','C','D','E'],
 
 df = pd.DataFrame(raw_data)
 print(df)
+print("______________________________________________________________________________")
 
 def text_df(df):
 
@@ -25,8 +26,11 @@ def text_df(df):
 df['Flag'] = df.apply(text_df, axis = 1)
 df['t1Flag'] = df['trigger1'].apply(lambda x: 'True' if x >= 75 and x <=85 else 'False')
 df['t2Flag'] = df['trigger2'].apply(lambda x: 'True' if x >= 90 else 'False')
-df[(df.t1Flag == "True") & (df.t2Flag == "True")]
+print("______________________________________________________________________________")
 print(df)
+newDf= df[(df.t1Flag == "True") & (df.t2Flag == "True")]
+print("______________________________________________________________________________")
+print(newDf)
 
 
 #alternate method of above logic to filterout the rows from datframe
