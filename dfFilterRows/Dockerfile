@@ -1,7 +1,7 @@
 FROM python
 MAINTAINER 'deepanshu'
 RUN apt install python3 -y
-RUN sudo pip3 install pandas
+RUN pip3 install pandas
 RUN mkdir /dockertest
 COPY dataframe_rows_filter.py /dockertest/dataframe_rows_filter.py
 WORKDIR /dockerTest
